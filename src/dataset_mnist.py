@@ -3,9 +3,9 @@ import numpy as np
 import pickle
 from matplotlib import pyplot as plt
 
-TRAIN_TEST_FILE = './mnist_60k_10k.data'
-MINI_TRAIN_TEST_FILE = './mnist_1k_100.data'
-BIN_TRAIN_TEST_FILE = './mnist_bin_60k_10k.data'
+TRAIN_TEST_FILE = './mnist_60k_10k.bin'
+MINI_TRAIN_TEST_FILE = './mnist_1k_100.bin'
+BIN_TRAIN_TEST_FILE = './mnist_bin_60k_10k.bin'
 
 def digit_to_vec(x):
     res = np.zeros(10, dtype=np.float32)

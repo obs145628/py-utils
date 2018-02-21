@@ -3,7 +3,7 @@ import numpy as np
 import pickle
 
 
-TRAIN_TEST_FILE = './boston.data'
+TRAIN_TEST_FILE = './boston.bin'
 
 def sep_train_test(data, target, train_len, test_len):
     total_len = train_len + test_len

@@ -1,8 +1,8 @@
 import numpy as np
 import pickle
 
-TRAIN_TEST_FILE = './norm_100k_10k.data'
-MINI_TRAIN_TEST_FILE = './norm_1k_100.data'
+TRAIN_TEST_FILE = './norm_100k_10k.bin'
+MINI_TRAIN_TEST_FILE = './norm_1k_100.bin'
 
 def vec_to_num(x):
     return np.argmax(x)
