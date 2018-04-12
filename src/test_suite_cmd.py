@@ -69,7 +69,12 @@ class TestSuites:
     def add_test_suite(self, ts):
         self.ts.append(ts)
         ts.out = sys.stdout
-        
+
+    def set_run_init(self, run_init):
+        for ts in self.ts:
+            ts.cmd.run_init = run_init
+        if run_init == True:
+            print('Running initialization')
 
     def run(self):
 
